@@ -36,7 +36,3 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-
-.icon {
-  filter: invert(100%);
-}
