@@ -1,0 +1,15 @@
+footer {
+  height: 84px;
+  background-image: url('../images/background_bottom.png');
+  background-repeat: repeat-x;
+  background-position: bottom center;
+}
+
+footer span {
+  line-height: 42px;
+  display: block;
+  padding-top: 42px;
+  user-select: none;
+  text-align: center;
+  text-shadow: 2px 2px 3px #282828;
+}
