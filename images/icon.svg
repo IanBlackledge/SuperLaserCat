@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <path d="M484.28 336.7L414.96 136.99L299.97 277.32" id="earPath"></path>
+    <clipPath id="earClip">
+      <use xlink:href="#earPath" opacity="1"></use>
+    </clipPath>
+    <path
+      d="M429.93 1015.51C446.17 1019.24 462.8 1011.07 469.76 995.94C482.6 968.05 514.69 898.33 566.03 786.77L699.82 770.81L753.8 663.66L767.88 588.42L664.61 478.98L643.49 364.98L347.75 282.91L267.95 136.99L155.28 333.07C81.87 474.77 35.99 563.34 17.63 598.77C13.46 606.82 12.59 616.17 15.18 624.85C34.16 688.28 21.72 646.71 24.37 655.56C77.35 832.61 221.34 967.56 401.45 1008.96C412.72 1011.56 365.96 1000.81 429.93 1015.51Z"
+      id="headPath"></path>
+    <clipPath id="headClip">
+      <use xlink:href="#headPath" opacity="1"></use>
+    </clipPath>
+    <path d="M997.89 396.89L583.31 508.26" id="laserPath"></path>
+    <path d="M547.93 469.95C553.27 477.28 556.61 481.86 557.95 483.69C571.34 502.06 576.6 525.12 572.49 547.47C572.04 549.92 570.92 556.03 569.12 565.81L496.32 529.69L547.93 469.95Z" id="eyePath"></path>
+    <mask id="eyeMask" x="436.32" y="409.95" width="197.54" height="215.85" maskUnits="userSpaceOnUse">
+      <rect x="436.32" y="409.95" width="197.54" height="215.85" fill="white"></rect>
+      <use xlink:href="#eyePath" opacity="1" fill="black"></use>
+    </mask>
+    <path d="M1024 512C1024 794.58 794.58 1024 512 1024C229.42 1024 0 794.58 0 512C0 229.42 229.42 0 512 0C794.58 0 1024 229.42 1024 512Z" id="borderPath"></path>
+    <clipPath id="borderClip">
+      <use xlink:href="#borderPath" opacity="1"></use>
+    </clipPath>
+  </defs>
+  <g>
+    <g>
+      <g></g>
+      <g>
+        <g clip-path="url(#earClip)">
+          <use xlink:href="#earPath" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="100" stroke-opacity="1"></use>
+        </g>
+      </g>
+      <g>
+        <g clip-path="url(#headClip)">
+          <use xlink:href="#headPath" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="100" stroke-opacity="1"></use>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use xlink:href="#laserPath" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="50" stroke-opacity="1"></use>
+        </g>
+      </g>
+      <g>
+        <g mask="url(#eyeMask)">
+          <use xlink:href="#eyePath" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="60" stroke-opacity="1"></use>
+        </g>
+      </g>
+      <g>
+        <use xlink:href="#borderPath" opacity="1" fill="#ffffff" fill-opacity="0"></use>
+        <g clip-path="url(#borderClip)">
+          <use xlink:href="#borderPath" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="110" stroke-opacity="1"></use>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
