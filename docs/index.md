@@ -1,7 +1,5 @@
 ---
-title: Index
+layout: home
+title_override: Super Laser Cat
+bonus_css: /css/home.css
 ---
-
-{% for post in site.posts %}
-  * [{{ post.title }}]({{ post.url | relative_url }})
-{% endfor %}

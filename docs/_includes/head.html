@@ -5,5 +5,11 @@
   <link href="{{ '/css/main.css' | relative_url }}" rel="stylesheet" type="text/css">
   <link href="{{ '/css/footer.css' | relative_url }}" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Audiowide|Comfortaa&display=swap" rel="stylesheet">
-  <title>{{page.title}} • {{ site.title }}</title>
+  <title>
+    {% if page.title_override %}
+      {{page.title_override}}
+    {% else %}
+      {{page.title}} • {{ site.title }}
+    {% endif %}
+  </title>
 </head>

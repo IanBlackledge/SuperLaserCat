@@ -1,9 +1,7 @@
 body {
   font-family: 'Comfortaa', sans-serif;
-  height: 100%;
   margin: 0;
   padding: 0;
-
   color: white;
   background-color: #282828;
   background-image: url('../images/background.png');
@@ -16,9 +14,18 @@ body {
   background: #fff;
 }
 
+.home {
+  height: calc(100vh - 84px);
+}
+
+.home img {
+  position: fixed;
+  top: calc(50% - 100px);
+  left: calc(50% - 250px);
+}
+
 .content {
-  width: 70vw;
-  height: 100vh;
+  height: calc(100vh - 84px);
   margin: 70px auto 20px auto;
   padding: 10px;
   border: 2px solid #515151;
@@ -26,6 +33,42 @@ body {
   background-color: #282828;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media (min-width:320px) {
+  .content {
+    width: 90vw;
+  }
+}
+
+@media (min-width:481px) {
+  .content {
+    width: 80vw;
+  }
+}
+
+@media (min-width:641px) {
+  .content {
+    width: 70vw;
+  }
+}
+
+@media (min-width:961px) {
+  .content {
+    width: 60vw;
+  }
+}
+
+@media (min-width:1025px) {
+  .content {
+    width: 50vw;
+  }
+}
+
+@media (min-width:1281px) {
+  .content {
+    width: 40vw;
+  }
 }
 
 .title {
