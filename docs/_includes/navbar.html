@@ -1,14 +1,14 @@
 <nav>
   <ul class="navigation">
     <li class="nav-title">
-      <a class="nav-title-a" href="/index">
-        <img class="icon" src="{{ site.baseurl }}/images/icon.svg" alt="" style="filter: invert(100%);">
+      <a class="nav-title-a" href="{{ '/index' | relative_url }}">
+        <img class="icon" src="{{ '/images/icon.svg' | relative_url }}" alt="" style="filter: invert(100%);">
         <span>Super Laser Cat</span>
       </a>
     </li>
-    <li><a href="/issues">Bug Reports</a></li>
-    <li><a href="/releases">Releases</a></li>
-    <li><a href="/devblog">Dev Blog</a></li>
-    <li><a href="/news">News</a></li>
+    <li><a href="{{ '/issues' | relative_url }}">Bug Reports</a></li>
+    <li><a href="{{ '/releases' | relative_url }}">Releases</a></li>
+    <li><a href="{{ '/devblog' | relative_url }}">Dev Blog</a></li>
+    <li><a href="{{ '/news' | relative_url }}">News</a></li>
   </ul>
 </nav>

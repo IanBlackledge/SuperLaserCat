@@ -1,3 +1,12 @@
 title: Super Laser Cat
 author: Ian Blackledge
 description: ""
+
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
