@@ -23,14 +23,14 @@
 <ul class="controls">
   <li class="prev">
     {% if prev_post %}
-      <a rel="prev" href="{{ prev_post.url }}">Prev</a>
+      <a rel="prev" href="{{ prev_post.url | relative_url }}">Prev</a>
     {% else %}
       <div>Prev</div>
     {% endif %}
   </li>
   <li class="next">
     {% if next_post %}
-      <a rel="next" href="{{ next_post.url }}">Next</a>
+      <a rel="next" href="{{ next_post.url | relative_url }}">Next</a>
     {% else %}
       <div>Next</div>
     {% endif %}
