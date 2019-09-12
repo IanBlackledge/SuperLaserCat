@@ -1,4 +1,3 @@
 ---
 title: Releases
-permalink: /releases/
 ---

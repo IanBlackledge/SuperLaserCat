@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="file" lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ '/assets/js/jquery-3.4.1.min.js' | relative_url }}" charset="utf-8"></script>
+    <link href="{{ '/assets/images/icon.svg' | relative_url }}" rel="shortcut icon">
+    <link href="{{ '/assets/css/navbar.css' | relative_url }}" rel="stylesheet" type="text/css">
+    <!-- <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="{{ '/assets/css/grid.css' | relative_url }}">
+    <link href="{{ '/assets/css/footer.css' | relative_url }}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Comfortaa&display=swap" rel="stylesheet">
+    <title>
+      {% if page.title_override %}
+        {{page.title_override}}
+      {% else %}
+        {{page.title}} • {{ site.title }}
+      {% endif %}
+    </title>
+  </head>
+
+  <body>
+    {% include navbar.html %}
+
+    <div class="controls-top">{% include controls.html %}</div>
+    <div class="main">
+      <div class="header">
+        <h1>{{ page.title }}</h1>
+        {% if page.date %}
+          <h5>
+            {%- assign ord = page.date | date: "%-d" -%}
+            {{ page.date | date: "%B " }}
+            {%- case ord -%}
+              {%- when "1" or "21" or "31" -%}
+                {{ ord }}st
+              {%- when "2" or "22" -%}
+                {{ ord }}nd
+              {%- when "3" or "23" -%}
+                {{ ord }}rd
+              {%- else -%}
+                {{ ord }}th
+            {%- endcase -%}
+            {{ page.date | date: ", %Y" }}
+          </h5>
+        {% endif %}
+      </div>
+      <hr>
+      {{ content }}
+    </div>
+    <div class="controls-bottom">{% include controls.html %}</div>
+
+    {% include footer.html %}
+
+    <script type="text/javascript">
+      var body = $('body:first');
+      $(this).mousemove(function(e){
+        var mouseX = (e.screenX / 20);
+        var mouseY = (e.screenY / 20);
+        body.css('background-position', mouseX + 'px ' + mouseY + 'px');
+      });
+    </script>
+  </body>
+
+</html>

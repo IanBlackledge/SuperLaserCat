@@ -6,8 +6,18 @@ description: ""
 include:
   - _pages
 
+sass:
+  style: expanded
+
 defaults:
   - scope:
-      path: ""
+      path: "_pages"
+      type: "pages"
     values:
-      layout: "default"
+      permalink: /:basename
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: grid
+      permalink: /:categories/:short_year-:i_month-:i_day-:title

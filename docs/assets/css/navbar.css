@@ -1,4 +1,4 @@
-.navigation {
+nav ul {
   position: fixed;
   top: 0;
   overflow: hidden;
@@ -12,12 +12,12 @@
   box-shadow: 0 0 30px #282828;
 }
 
-.navigation li {
+nav ul li {
   float: right;
   flex-wrap: nowrap;
 }
 
-.navigation li a {
+nav ul li a {
   display: table-cell;
   height: 50px;
   padding: 0 10px;
@@ -27,7 +27,7 @@
   color: white;
 }
 
-.navigation .nav-title {
+nav ul .nav-title {
   font-family: 'Audiowide', sans-serif;
   font-size: 1.5em;
   float: left;
@@ -35,23 +35,24 @@
   text-shadow: 2px 2px 3px #000;
 }
 
-.navigation .nav-title .nav-title-a {
+nav ul .nav-title .nav-title-a {
   padding: 0;
+  outline: none;
 }
 
 @media (min-width: 683px) {
-  .navigation .nav-title .nav-title-a span {
+  nav ul .nav-title .nav-title-a span {
     vertical-align: middle;
   }
 }
 
 @media (max-width: 682px) {
-  .navigation .nav-title .nav-title-a span {
+  nav ul .nav-title .nav-title-a span {
     display: none !important;
   }
 }
 
-.navigation .nav-title .nav-title-a img {
+nav ul .nav-title .nav-title-a img {
   height: 40px;
   padding: 5px 0 5px 5px;
   vertical-align: middle;

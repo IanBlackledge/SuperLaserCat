@@ -1,4 +1,3 @@
 ---
 title: Issues
-permalink: /issues/
 ---

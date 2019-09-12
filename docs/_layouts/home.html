@@ -7,10 +7,19 @@
     {% include navbar.html %}
 
     <div class="home">
-      <img class="icon" src="{{ '/images/logo.png' | relative_url }}" alt="" style="filter: invert(100%);">
+      <img class="icon" src="{{ '/assets/images/logo.png' | relative_url }}" alt="" style="filter: invert(100%);">
     </div>
 
     {% include footer.html %}
+
+    <script type="text/javascript">
+      var body = $('body:first');
+      $(this).mousemove(function(e){
+        var mouseX = (e.screenX / 20);
+        var mouseY = (e.screenY / 20);
+        body.css('background-position', mouseX + 'px ' + mouseY + 'px');
+      });
+    </script>
   </body>
 
 </html>

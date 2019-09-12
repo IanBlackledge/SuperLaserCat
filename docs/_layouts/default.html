@@ -12,6 +12,15 @@
     </div>
 
     {% include footer.html %}
+
+    <script type="text/javascript">
+      var body = $('body:first');
+      $(this).mousemove(function(e){
+        var mouseX = (e.screenX / 20);
+        var mouseY = (e.screenY / 20);
+        body.css('background-position', mouseX + 'px ' + mouseY + 'px');
+      });
+    </script>
   </body>
 
 </html>
