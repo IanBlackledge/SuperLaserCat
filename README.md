@@ -1,4 +1,4 @@
-[![SLC](https://github.com/IanBlackledge/SuperLaserCat/blob/master/docs/images/logo.png)](https://ianblackledge.github.io/SuperLaserCat/)
+[![SLC](https://github.com/IanBlackledge/SuperLaserCat/blob/master/docs/assets/images/logo.png)](https://ianblackledge.github.io/SuperLaserCat/)
 # [Super Laser Cat](https://ianblackledge.github.io/SuperLaserCat/) [![Unreal Engine](https://img.shields.io/badge/Unreal_Engine-4.23-blue?style=flat-square&logo=unreal-engine)](https://www.unrealengine.com)
 
 Super Laser Cat is a silly game about causing mayhem while equipped with only a laser pointer and a cat.
