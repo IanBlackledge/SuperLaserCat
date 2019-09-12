@@ -38,6 +38,7 @@ nav ul .nav-title {
 nav ul .nav-title .nav-title-a {
   padding: 0;
   outline: none;
+  text-decoration: none;
 }
 
 @media (min-width: 683px) {
